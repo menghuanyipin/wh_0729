@@ -2,11 +2,40 @@ git init : 初始化一个空的git仓库（一般需要在工程的根目录下进行初始化）
 
 把源码从工作区提交到暂存区的命令：
 
-git add .
-git add -u
-git add -A
+git add . : 把新增的文件提交到暂存区
+git add -u : 把修改的文件提交到暂存区
+git add -A : 不管是新增还是修改的文件都可以提交到暂存区
 
 git add 文件名
 git add 文件名 文件名
 
 查看git仓库的状态：git status
+
+git commit -m '注释' 作用是将git暂存区的代码提交到仓库
+
+git diff 文件名 作用是对比文件前后修改的不同
+
+
+git log : 查看当前提交的版本（只能查看比当前版本和比当前老的版本）
+git relog : 查看所有提交的历史版本
+
+git reset --hard 版本号 (切换到版本号指明的版本上)
+
+
+git checkout -- 文件名 撤销工作区的修改(指的是没有提交暂存区之前)
+
+git reset HEAD  文件名 撤销暂存区的修改（指的是没有提交仓库前）
+
+git rm 文件名  从git仓库删除一个文件(记得要git commit)
+
+ssh-keygen -t rsa -C "youremail@example.com"   在本机上运行，生成公钥和秘钥（秘钥自己保存好，公钥需要填写到对应git账号上）
+
+git pull origin master --allow-unrelated-histories
+
+
+
+
+
+
+
+
