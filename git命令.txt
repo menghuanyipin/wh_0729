@@ -1,0 +1,12 @@
+git init : 初始化一个空的git仓库（一般需要在工程的根目录下进行初始化）
+
+把源码从工作区提交到暂存区的命令：
+
+git add .
+git add -u
+git add -A
+
+git add 文件名
+git add 文件名 文件名
+
+查看git仓库的状态：git status
